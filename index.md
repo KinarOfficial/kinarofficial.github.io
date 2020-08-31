@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>A Website on GitHub </title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale1">
+    
+    <link href="Style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 style="text-align: center"> Hunter Walker</h1>
+       
+        <img src="https://i.ibb.co/JrRFgKF/Icon.jpg" width="300" height="300" class="center">
 
+        <p>I have very little experience with Web Design and Development. I've taken some courses here are CCC and used HTML/CSS a little before but never focused on really designing anything. <br><br>
+        I would like to learn how make more professional responsive websites that you would see from big companies or at least big tech companies. <br><br>
+        My hopes are to take my new knowledge of HTML/CSS and proper design schemes and create a personal website to display my own creative works and to potentially get a career designing and setting up websites. </p>
+        
+    </body>
+</html>
