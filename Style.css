@@ -1,3 +1,7 @@
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 .center {
     display: block;
     margin-left: auto;
@@ -7,5 +11,55 @@ p {
     background-color:darkgray;
 }
 body {
+    padding:25px;
     background-color:lightblue;
+    color:black;
+    font-size: 25px;
+}
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#content {
+	-webkit-transition: all .9s ease-in-out;
+	-moz-transition: all .9s ease-in-out;
+	-o-transition: all .9s ease-in-out;
+	-ms-transition: all .9s ease-in-out;
+}
+
+#content {
+    width:80px;
+    margin:25px;
+}
+
+.glow {
+    font-size:30px;
+    color:ghostwhite;
+    text-align:center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px gold, 0 0 40px gold, 0 0 50px gold, 0 0 60px gold, 0 0 70px gold;
+}
+    to {
+text-shadow:0 0 20px #fff, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;
+  }
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: lightskyblue;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
 }

@@ -4,20 +4,80 @@
     <title>A Website on GitHub </title>
     <meta name="author" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="Style.css" rel="stylesheet">
-    <script></script>
+    
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="alert.js"></script>
+    
+    <script>
+$(document).ready(function(){
+  $("p").mouseover(function(){
+    $("p").css("background-color", "black");
+  });
+  $("p").mouseout(function(){
+    $("p").css("background-color", "lightgray");
+  });
+});
+    </script>
+    
+<script>
+$(document).ready(function(){
+    $('#Hunter').hover(function() {
+        $("#Hunter").addClass('transition');
+    
+    }, function() {
+        $("#Hunter").removeClass('transition');
+    });
+});
+
+</script>
+    
+<script>
+    function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+}
+
+</script>
+    
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#panel").hide();
+  });
+  $("#show").click(function(){
+    $("#panel").show();
+  });
+});
+</script>
+    
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+
     </head>
     
     <body>
-        <h1 style="text-align: center"> Hunter Walker</h1>
-       
-        <img src="https://i.ibb.co/JrRFgKF/Icon.jpg" width="300" height="300" class="center">
-
-        <p>I have very little experience with Web Design and Development. I've taken some courses here are CCC and used HTML/CSS a little before but never focused on really designing anything. <br><br>
-        I would like to learn how make more professional responsive websites that you would see from big companies or at least big tech companies. <br><br>
-        My hopes are to take my new knowledge of HTML/CSS and proper design schemes and create a personal website to display my own creative works and to potentially get a career designing and setting up websites. </p>
+        <h1 class="glow" style="text-align: center"> Hunter Walker</h1>
         
+        <button onclick="darkMode()">Dark Mode</button>
+       
+        <img id="Hunter" src="https://i.ibb.co/JrRFgKF/Icon.jpg" width="300" height="300" class="center" borde>
+        
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        
+        <div id="flip">Click to open</div>
+        <div id="panel">
+            <p>I have very little experience with Web Design and Development. I've taken some courses here at CCC and used HTML/CSS a little before but never focused on really designing anything. <br><br>
+            I would like to learn how make more professional responsive websites that you would see from big companies or at least big tech companies. <br><br>
+            My hopes are to take my new knowledge of HTML/CSS and proper design schemes and create a personal website to display my own creative works and to potentially get a career designing and setting up websites. </p>
+            </div>
     </body>
 </html>
