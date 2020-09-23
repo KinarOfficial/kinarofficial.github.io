@@ -2,6 +2,7 @@
   background-color: darkslategray;
   color: white;
 }
+
 .center {
     display: block;
     margin-left: auto;
@@ -9,12 +10,18 @@
 }
 p {
     background-color:darkgray;
+    font-size:.6em;
+    line-height: 1.8em;
 }
 body {
     padding:25px;
     background-color:lightblue;
-    color:black;
+    color:white;
     font-size: 2vw;
+    margin:0;
+}
+h1 {
+    font-size:3vw;
 }
 .transition {
     -webkit-transform: scale(1.2); 
@@ -57,9 +64,24 @@ text-shadow:0 0 20px #fff, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 6
   text-align: center;
   background-color: lightskyblue;
   border: solid 1px #c3c3c3;
+  width:66vw;
+  height: auto;
 }
 
 #panel {
-  padding: 50px;
+  padding: 10px;
   display: none;
+  width:66vw;
+  height: auto;
+}
+
+@media (max-width: 400px) {
+    
+    body {
+        width:90vw;
+        background-color:red;
+    }
+    #panel {
+        
+    }
 }
