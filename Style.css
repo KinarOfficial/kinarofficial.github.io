@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+.button {
+    font-size: 1.6vw;
+}
+
 .dark-mode {
   background-color: darkslategray;
   color: white;
@@ -9,13 +16,13 @@
     margin-right: auto;
 }
 p {
-    background-color:darkgray;
+    background-color:darkred;
     font-size:.6em;
     line-height: 1.8em;
 }
 body {
     padding:25px;
-    background-color:lightblue;
+    background-color:slategrey;
     color:white;
     font-size: 2vw;
     margin:0;
@@ -42,7 +49,7 @@ h1 {
 }
 
 .glow {
-    font-size:30px;
+    font-size:3vw;
     color:ghostwhite;
     text-align:center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -61,27 +68,47 @@ text-shadow:0 0 20px #fff, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 6
 
 #panel, #flip {
   padding: 5px;
+  font-size:5vw;
   text-align: center;
-  background-color: lightskyblue;
+  background-color: darkgray;
   border: solid 1px #c3c3c3;
-  width:66vw;
+  width:auto;
   height: auto;
 }
 
 #panel {
   padding: 10px;
   display: none;
-  width:66vw;
+  width:auto;
   height: auto;
 }
-
-@media (max-width: 400px) {
+@media only screen and (min-width: 1000px){
+    #panel, #flip{
+        font-size:3vw;
+    }
+    #Hunter {
+        width: auto;
+        height: auto;
+    }
+    
+}
+@media only screen and (max-width: 700px) {
     
     body {
-        width:90vw;
+        width:100vw;
+        font-size: 4vw;
         background-color:red;
     }
-    #panel {
-        
+    .button {
+        text-align: center;
+        font-size:3vw;
     }
+    #flip {
+        width: auto;
+    }
+    #panel {
+        font-size:5vw;
+        width:auto;
+    }
+
 }
